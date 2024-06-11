@@ -1,0 +1,30 @@
+{
+    "lists":[
+            {
+                "id":1,
+                "title":"Jobs",
+                "card":{
+                    "1":"buying note",
+                    "2":"watch Movie [Horror]"
+                }
+            },
+            {
+                "id":2,
+                "title":"Study",
+                "card":{
+                    "1":"Vue 3 Js Documentry ",
+                    "2":"Debugg Previous Codes"
+                }
+            },
+
+            {
+                "id":3,
+                "title":"Having Fun",
+                "card":{
+                    "1":"Going to Park",
+                    "2":"Hang out  with friend",
+                    "3":"Coffe Shop"
+                }
+            }
+    ]
+}

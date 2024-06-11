@@ -1,14 +1,11 @@
 <template>
-  <div class=" p-6 rounded-3xl text-list_text bg-list_container text-3xl min-w-[20rem]  ">
+  <div class=" p-6 rounded-3xl text-list_text bg-list_container text-3xl min-w-[20rem] ">
     <!-- Header -->
-    <div class="header-list p-2  text-list_text   hover:cursor-pointer rounded-lg flex justify-between items-center" 
-        v-for="(item,index) in mycustomList" :key="index">
-        <!-- <h3 class="capitalize" >{{ item[2].title }} -- {{ i[2] }} </h3> -->
-        <h3 class="capitalize" >{{ item.title  }}  </h3>
-        <!-- <div v-for="(subitem,subIndex) in item" :key="subIndex">
-        </div> -->
-        <div class="3dots hover:bg-add_to_card_bg hover:text-list_text  flex items-center px-4 py-2 rounded-3xl "><span class="" @click="clickDot()">...</span></div>
+        <div class="header-list p-2  text-list_text   hover:cursor-pointer rounded-lg flex justify-between items-center">
+            <h3 class="capitalize" >{{ title }}</h3>
+            <div class="3dots hover:bg-add_to_card_bg hover:text-list_text  flex items-center px-4 py-2 rounded-3xl "><span class="" @click="clickDot()">...</span></div>
             </div>
+        <hr class="hover:rounded-lg">
 
         <!-- Body list -->
             <div class="body-list  pt-4 flex items-left flex-col gap-4     ">
@@ -25,13 +22,11 @@
                           <p>{{ item.title }} (index: {{  index }})</p>
                      </div> -->
 
-                     <!-- <div class="" v-for="(item,i) in mycustomList" :key="item.id">
+                     <div class="" v-for="(item,i) in mycustomList" :key="item.id">
                         {{ item.id }}
                         {{ item.title[i] }}
                         {{ item.title }}
-                     </div> -->
-
-
+                     </div>
                     <!-- <div class="group hover:outline outline-4 outline-primary body-list-content rounded-full bg-list_text/60 p-3 text-list_container cursor-pointer  relative group">
                     <h3 class=" capitalize ">Test bList 2</h3>
                     <font-awesome-icon :icon="['fas', 'user-secret']" class=" hidden group-hover:block duration-200 absolute hover:text-list_container
@@ -68,7 +63,7 @@
 
 <script setup >
 import {defineProps,onMounted,ref} from 'vue';
-import DateX from '../board-components/db.json';
+import DateX from './db.json';
 const props  =defineProps({
   title: String,
 });
@@ -77,42 +72,10 @@ const form_text=ref(null);
 const textera=ref(null);
 
 const mycustomList=[
-  { id:1 , title :'Hasan',
-    jobs:[
-      {
-        1:'Firsty',
-        2:'Second Fishing',
-        3:'Third Gold'
-      }
-    ]
-  },
-  { id:2 , title :'Amir',
-    jobs:[
-      {
-        1:'Firsty',
-        2:'Second Fishing',
-        3:'Third Gold'
-      }
-    ]
-  },
-  { id:3 , title :'Javad',
-    jobs:[
-      {
-        1:'Firsty',
-        2:'Second Fishing',
-
-      }
-    ]
-  },
-  { id:4 , title :'Hojjat',
-    jobs:[
-      {
-        1:'Firsty',
-        2:'Second Fishing',
-
-      }
-    ]
-  }
+  { id:1 , title :'Hasan'},
+  { id:2 , title :'Amir'},
+  { id:3 , title :'Javad'},
+  { id:4 , title :'Hojjat'}
 ]
 
 
