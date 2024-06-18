@@ -2,42 +2,33 @@
   <div class=" p-6 rounded-3xl text-list_text bg-list_container text-3xl min-w-[20rem]  ">
     <!-- Header -->
     <div class="header-list p-2  text-list_text   hover:cursor-pointer rounded-lg flex justify-between items-center" 
-        v-for="(item,index) in mycustomList" :key="index">
-        <!-- <h3 class="capitalize" >{{ item[2].title }} -- {{ i[2] }} </h3> -->
-        <h3 class="capitalize" >{{ item.title  }}  </h3>
-        <!-- <div v-for="(subitem,subIndex) in item" :key="subIndex">
-        </div> -->
+        >
+        <h3 class="capitalize" >{{ title }}  </h3>
+
         <div class="3dots hover:bg-add_to_card_bg hover:text-list_text  flex items-center px-4 py-2 rounded-3xl "><span class="" @click="clickDot()">...</span></div>
             </div>
 
         <!-- Body list -->
             <div class="body-list  pt-4 flex items-left flex-col gap-4     ">
-                    <!-- <div class="group hover:outline outline-4 outline-primary body-list-content rounded-full bg-list_text/60 p-3 text-list_container cursor-pointer  relative group">
+                    <div class="group hover:outline outline-4 outline-primary body-list-content rounded-full bg-list_text/60 p-3 text-list_container cursor-pointer  relative group">
                     <h3 class=" capitalize ">Test bList 1</h3>
                     <font-awesome-icon :icon="['fas', 'user-secret']" class=" hidden group-hover:block duration-200 absolute hover:text-list_container
                      hover:bg-list_text   rounded-full px-2 min-w-[40px] min-h-[40px]  right-2 top-[15%]"
-                       />w
+                       />
 
-                    </div> -->
+                    </div>
 
                     <!-- jsOn -->
-                     <!-- <div v-for="(item,index) in myList" :key="item.id" >
-                          <p>{{ item.title }} (index: {{  index }})</p>
-                     </div> -->
-
-                     <!-- <div class="" v-for="(item,i) in mycustomList" :key="item.id">
-                        {{ item.id }}
-                        {{ item.title[i] }}
-                        {{ item.title }}
-                     </div> -->
+           
 
 
-                    <!-- <div class="group hover:outline outline-4 outline-primary body-list-content rounded-full bg-list_text/60 p-3 text-list_container cursor-pointer  relative group">
+
+                    <div class="group hover:outline outline-4 outline-primary body-list-content rounded-full bg-list_text/60 p-3 text-list_container cursor-pointer  relative group">
                     <h3 class=" capitalize ">Test bList 2</h3>
-                    <font-awesome-icon :icon="['fas', 'user-secret']" class=" hidden group-hover:block duration-200 absolute hover:text-list_container
+                    <font-awesome-icon :icon="['fas', 'user-secret']" class=" hidden  group-hover:block duration-200 absolute hover:text-list_container
                      hover:bg-list_text   rounded-full px-2 min-w-[40px] min-h-[40px]  right-2 top-[15%]"
                        />
-                    </div>                -->
+                    </div>               
             </div>
 
         <!-- footer List [ Add new Card ] -->
